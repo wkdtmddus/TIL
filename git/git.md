@@ -45,7 +45,7 @@ local(사용자가 직접 조작하는 환경) <-> global(전역) <-> online, re
 >VCS(Version Control System)
 ---
 CLI를 통해 git을 이용하여 원격 저장소에 로컬 파일을 쉽게 commit 할 수 있습니다.  
-git은 '분산형 버전 관리 시스템'이기 때문에 팀원 또는 다른 사람들과 같이 저장소를 만들어 갈 수 있습니다.  
+git은 `분산형 버전 관리 시스템`이기 때문에 팀원 또는 다른 사람들과 같이 저장소를 만들어 갈 수 있습니다.  
 <div style="text-align : right">2024011</div>
 
 ---
