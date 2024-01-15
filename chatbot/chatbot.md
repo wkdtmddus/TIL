@@ -9,3 +9,4 @@ API -> Interface -> UI
 
 ---
 Open API를 활용하여 다양한 프로그램들에 활용하면 좋을 것 같습니다.
+<div style="text-align: right">20240110 </div>
