@@ -78,8 +78,8 @@ git clone remote_repo_url: 원격 저장소 전체를 복제
 .gitignore 파일 생성  
 * 주의사항  
   이미 git의 관리를 받은 것은 나중에 gitignore 해도 적용이 되지 않음
-* 참고
-  gitignore.io: 기본 gitignore 셋팅 사이트
+* 참고  
+  `gitignore.io`: 기본 gitignore 셋팅 사이트
 ---
 git init은 같은 경로에서 하나만 만들어야합니다. 내부에 또 하면, 내부의 commit들을 읽을 수가 없습니다.  
 gitignore.io에서 관련된 프로그램을 간단하게 작성하면, 편리하게 파일을 만들어 줍니다.  
