@@ -127,3 +127,9 @@ Comment: 필요한 주석 추가 및 변경
 ---
 커밋 컨벤션을 통해 팀원들과 소통하며 repogitory를 관리할 수 있습니다. 숙지하여 원활한 개발이 될 수 있도록 해야합니다.  
 <div style="text-align: right">20240123</div>
+
+---
+### git clone
+git clone을 하면 해당 폴더에 `.git`파일이 숨어있습니다. 그래서 clone폴더 자체를 복사하면 안 됩니다. 폴더 내부에 들어가서 원하는 파일이나 폴더를 복사하여 옮겨 주셔야합니다.  
+clone폴더를 다른 repository로 옮기면서 충돌이 생겼습니다. 현재 사용 중인 폴더에 `.git`파일이 존재하는 데, clone폴더에도 `.git`파일이 존재하기 때문에 충돌이 발생한 것 입니다.
+<div style="text-align: right">20240124</div>
