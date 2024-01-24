@@ -10,7 +10,7 @@ import requests
 
 def get_deposit_products():
     # 본인의 API KEY 로 수정합니다.
-    API_KEY = "a75efea13fddb80f08e28aa22cb21240"
+    API_KEY = ""
     URL = f'http://finlife.fss.or.kr/finlifeapi/depositProductsSearch.json'
 
     params = {
