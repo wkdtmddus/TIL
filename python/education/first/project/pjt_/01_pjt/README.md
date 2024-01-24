@@ -36,6 +36,26 @@ response 내의 데이터를 출력하기 위해서 `key`값이 `result`인 데�
 ---
 # problem3
 ### 데이터 가공 - 전체 정기예금 상품들의 옵션 정보 리스트
+풀이.1
+```python
+for item in response['result']:
+    pprint.pprint(item)
+```
+`for문`을 사용하여 result의 요소를 출력합니다.  
+
+풀이.2
+```python
+result = response['result'].keys()
+```
+dictionary의 `keys()`함수를 사용하여 result 요소의 `key`값을 할당합니다.
+
+---
+참고  
+`pprint`: pretty print. 인간이 보기 좋게 데이터를 출력합니다.
+
+---
+dictionary에서 key만 얻고 싶을 때, `.keys()`함수를 사용하여 편리하게 얻을 수 있습니다.
+<div style="text-align: right">20240119</div>
 
 ---
 # problem4
