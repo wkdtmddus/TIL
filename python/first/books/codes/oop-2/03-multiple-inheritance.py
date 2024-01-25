@@ -20,5 +20,16 @@ class Dad(Person):
         return '아빠가 걷기'
 
 
-class FirstChild:
-    pass
+class FirstChild(Mom, Dad):
+    def swim(self):
+        return '첫째가 수영'
+    
+    def cry(self):
+        return '첫째가 응애'
+
+baby1 = FirstChild('김싸피')
+print(baby1.cry())
+print(baby1.swim())
+print(baby1.walk())
+print(baby1.gene)
+

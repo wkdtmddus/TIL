@@ -20,5 +20,6 @@ class D(B, C):
         super().__init__()
         print('D Constructor')
 
+# obj = D()
 
-obj = D()
+print(D.mro())

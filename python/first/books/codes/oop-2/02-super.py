@@ -16,4 +16,6 @@ class Student(Person):
 
 
 class Student(Person):
-    pass
+    def __init__(self, name, age, number, email, student_id):
+        super().__init__(name, age, number, email)
+        self.student_id = student_id

@@ -14,9 +14,17 @@ class ParentB:
         print(f'Value from ParentB: {self.value_b}')
 
 
-class Child:
-    pass
+class Child(ParentA, ParentB):
+    def __init__(self):
+        super().__init__()
+        self.value_c = 'Child'
 
+    def show_value(self):
+        super().show_value()
+        print(f'Value from Child: {self.value_c}')
 
 child = Child()
 child.show_value()
+print(child.value_a)
+print(child.value_c)
+print(child.value_b)
