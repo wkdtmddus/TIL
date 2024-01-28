@@ -27,5 +27,6 @@ catalog :
 ```
 ---
 catalog를 backup_catalog에 그대로 할당하게 되면, 같은 주소를 바라보게 되어 catalog 수정 시, backup_catalog도 같이 수정이 됩니다.  
-backup_catalog에 새로운 주소를 할당하여 서로 다른 주소를 바라보도록 해야합니다.
+backup_catalog에 새로운 주소를 할당하여 서로 다른 주소를 바라보도록 해야합니다.  
+`is`를 사용하여 두 변수가 같은 지 `True`와 `False`로 값을 반환합니다.
 <div style="text-align: right">20240116</div>
