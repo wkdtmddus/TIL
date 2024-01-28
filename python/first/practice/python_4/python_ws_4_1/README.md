@@ -38,4 +38,4 @@
 `json`으로 데이터를 받으면 `dict`로 변환합니다.  
 `pprint`를 사용하여 데이터를 보기 좋게 출력합니다.  
 특정 데이터 출력을 위해 `key`로 데이터를 얻습니다.
-<div style="text-align: right">20240117</div>
+<div style="text-align: right">20240118</div>
