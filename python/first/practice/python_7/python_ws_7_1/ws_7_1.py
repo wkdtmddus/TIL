@@ -5,5 +5,6 @@ class Shape:
         self.height = h
 
 
+
 shape1 = Shape(5, 3)
 print(shape1.width, shape1.height)
