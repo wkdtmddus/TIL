@@ -11,6 +11,31 @@
 
 >* 버전 = commit: 변경된 파일들을 저장하는 행위. `snapshot`
 
+### CLI
+```
+.    : 현재 디렉토리
+
+..   : 현재의 상위 디렉토리
+
+touch: 파일 생성
+
+mkdir: 디렉토리 생성
+
+ls   : 현재 디렉토리 목록 출력
+
+cd   : 디렉토리 이동
+
+start: 폴더/파일 열기
+
+rm   : 파일 삭제
+
+rm -r: 디렉토리 삭제
+
+pwd  : 현재 위치의 절대 경로
+
+~    : home
+```
+
 ### git CLI
 ```
 git init: 초기화
@@ -42,7 +67,11 @@ local(사용자가 직접 조작하는 환경) <-> global(전역) <-> online, re
 
 ---
 참고
->VCS(Version Control System)
+>VCS(Version Control System)  
+
+>CLI(Command Line Interface)  
+
+>GUI(graphic User Interface)
 ---
 CLI를 통해 git을 이용하여 원격 저장소에 로컬 파일을 쉽게 commit 할 수 있습니다.  
 git은 `분산형 버전 관리 시스템`이기 때문에 팀원 또는 다른 사람들과 같이 저장소를 만들어 갈 수 있습니다.  
