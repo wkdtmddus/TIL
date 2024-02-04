@@ -5,4 +5,4 @@
 
 ---
 최댓값을 구하기 위해 `sort()`를 사용하여 리스트를 정렬합니다. 그리고 마지막 값을 출력합니다.
-<div style="text-align: right">20240129</div>
+<div style="text-align: right">20240126</div>
