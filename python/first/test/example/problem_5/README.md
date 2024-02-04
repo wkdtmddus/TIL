@@ -5,4 +5,4 @@
 
 ---
 `if문`을 사용하여 조건을 입력합니다. `get()`을 사용하여 키의 값이 `공백`과 같은 값인지 확인합니다. `return`으로 요구하는 값을 반환합니다.
-<div style="text-align: right">20240129</div>
+<div style="text-align: right">20240126</div>
