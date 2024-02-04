@@ -5,4 +5,4 @@ List 메서드 .count() 사용 시 감점
 
 ---
 menus 키의 값을 menu에 할당합니다. menu는 리스트이기 때문에 `len()`으로 길이를 출력합니다.
-<div style="text-align: right">20240129</div>
+<div style="text-align: right">20240126</div>
