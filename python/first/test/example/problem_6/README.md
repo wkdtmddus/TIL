@@ -6,4 +6,4 @@
 ---
 `get()`을 사용하여 딕셔너리에 있는 키로 값을 가져옵니다.  
 `isdecimal()`을 사용하여 해당 문자가 숫자인지 확인합니다. 그 후, 요구하는 값을 반환합니다.
-<div style="text-align: right">20240129</div>
+<div style="text-align: right">20240126</div>
