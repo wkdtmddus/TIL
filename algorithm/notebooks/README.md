@@ -7,3 +7,4 @@
 | Tree |
 | Star |
 | bruteforce |
+| subset&greedy |
