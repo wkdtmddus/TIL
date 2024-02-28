@@ -6,3 +6,4 @@
 | Queue |
 | Tree |
 | Star |
+| bruteforce |
