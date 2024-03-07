@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div p {
+      color: blue;
+    }
+    div > p {
+      color: crimson;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- 자손 결합자는 모든 하위 요소들에 영향을 줍니다. -->
+  <!-- 자식결합자는 바로 아래 요소에만 영향을 줍니다. -->
+  <div>
+    <p>자식</p>
+    <dd><p>손자</p></dd>
+    <p>자식</p>
+  </div>
+</body>
+</html>
