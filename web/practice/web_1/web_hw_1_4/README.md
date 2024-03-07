@@ -1,7 +1,7 @@
 ### form, label, input태그 실습 예제 Lv4
 목표  
 - form, label, input태그를 이해한다.
-- HTML&CSS를 이해하고 명세에 맞춰 코드를 작성한다.
+- HTML & CSS를 이해하고 명세에 맞춰 코드를 작성한다.
 ---
 문제  
 로그인 Form을 생성하는 HTML코드를 작성하시오.
