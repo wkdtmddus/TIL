@@ -4,3 +4,4 @@
 | CSS Layout     |
 | Bootstrap      |
 | Responsive Web |
+| Semantic Web   |
