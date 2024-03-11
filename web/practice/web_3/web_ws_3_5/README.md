@@ -11,5 +11,5 @@ Bootstrap 종합실습1에서 완성한 결과물에 이어서 Section과 Footer
 - Section 내부의 이미지간 간격은 동일하다.
 - Section 내부의 아래에는 이미지를 설명하는 간단한 글이 작성되어 있다.
 ---
-
+부트스트랩에 foot component를 확인해본다.
 <div style="text-align: right">20240308</div>
