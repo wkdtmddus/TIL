@@ -13,5 +13,5 @@
 - position과 flex, boxmodel 속성은 반드시 사용하여야 한다.
 - 그 외 화면 구성은 자유롭게 진행한다.
 ---
-
+요구사항을 `MDN`문서를 활용하여 만족시킵니다.
 <div style="text-align: right">20240307</div>
