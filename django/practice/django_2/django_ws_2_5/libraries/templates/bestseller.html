@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block head %}
+  <title>베스트 셀러 목록</title>
+{% endblock head %}
+{% block content %}
+  <h1>베스트 셀러 목록</h1>
+  {% for item in result %}
+    <p>제목 : {{ item.title }}</p>
+    <p>저자 : {{ item.author }}</p>
+    <p>설명 : {{ item.bestDuration }}</p>
+    <hr>
+  {% endfor %}
+{% endblock content %}

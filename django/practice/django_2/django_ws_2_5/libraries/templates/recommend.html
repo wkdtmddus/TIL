@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block head %}
+  <title>주목할 만한 신간 도서 목록</title>
+{% endblock head %}
+{% block content %}
+  <h1>주목할 만한 신간 도서 목록</h1>
+  {% for item in result %}
+    <p>제목 : {{ item.title }}</p>
+    <p>저자: {{ item.author }}</p>
+    <hr>
+  {% endfor %}
+{% endblock content %}
