@@ -30,7 +30,7 @@ def search(request):
 
 
 def throw(request):
-    return render(request, 'articles/throw.html')\
+    return render(request, 'articles/throw.html')
     
 
 # throw 페이지에서 데이터를 받고
