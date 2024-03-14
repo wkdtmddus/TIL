@@ -59,3 +59,11 @@
   ```
   $ python manage.py migrate
   ```
+- migrations 파일들이 migrate 됐는지 확인하는 명령어(`X` 표시가 있으면 완료)
+  ```
+  $ python manage.py showmigrations
+  ```
+- 해당 migrations 파일이 SQL 언어로 어떻게 번역되어 DB에 전달되는지 확인
+  ```
+  $ python manage.py sqlmigrate articles 0001
+  ```
