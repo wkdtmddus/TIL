@@ -38,6 +38,10 @@
   ```
   $ python manage.py startapp articles
   ```
+- 관리자 계정
+  ```
+  $ python manage.py createsuperuser
+  ```
 ---
 ### 모델 명령어(데이터베이스 관련)
 - model class를 기반으로 최종 설계도(migration) 작성
