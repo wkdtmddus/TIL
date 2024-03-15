@@ -1,0 +1,25 @@
+.intro,
+.skills,
+.project,
+.contact {
+  height: 300px;
+}
+
+.frontpage,
+.skills,
+.contact {
+  background-color: lightgray;
+}
+
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.card-style {
+  margin: 0;
+  padding: 0;
+}
+
+.frontpage {
+  height: auto;
+}
