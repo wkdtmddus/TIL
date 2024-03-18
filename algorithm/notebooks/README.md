@@ -8,3 +8,4 @@
 | Star |
 | bruteforce |
 | subset&greedy |
+| divide&conquer |
