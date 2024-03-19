@@ -10,3 +10,4 @@
 | subset&greedy |
 | divide&conquer |
 | backtracking&tree |
+| graph |
