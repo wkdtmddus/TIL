@@ -34,6 +34,10 @@ def prim(start):
     while pq:
         weight, now = heappop(pq)
 
+        # 이미 방문한 지점이면 통과
+        if mst[now]:
+            continue
+
         # 방문 처리
         mst[now] = 1
         # 누적합 추가
@@ -45,15 +49,11 @@ def prim(start):
             if graph[now][to] == 0:
                 continue
             
-            # 이미 방문했다면
-            if mst[to]:
-                continue
-            
             # 우선순위 큐의 특성상
             # 더 먼거리로 가는 방법이 큐에 저장이 되어있기 때문에
             # 기존에 더 짧은 거리로
-            # 방문 했다면
-            if mst[now]:
+            # 이미 방문했다면
+            if mst[to]:
                 continue
 
             heappush(pq, (graph[now][to], to))
