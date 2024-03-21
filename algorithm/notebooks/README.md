@@ -11,3 +11,4 @@
 | divide&conquer |
 | backtracking&tree |
 | graph |
+| mst&dijkstra |
