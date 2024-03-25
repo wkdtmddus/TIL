@@ -67,3 +67,28 @@
   ```
   $ python manage.py sqlmigrate articles 0001
   ```
+---
+### ORM & QuerySet API
+##### Aricle.objects.all()
+##### Model class/Manager/Querset API
+- QuerySet API 사전 준비
+  - 외부 라이브러리 설치 및 설정
+```
+$ pip install ipython
+$ pip install django-extensions
+```
+```
+# settings.py
+INSTALLED_APPS = [
+  'articles',
+  'django_extensions',
+  ...,
+]
+```
+```
+$ pip freeze > requirements.txt
+```
+- Django shell 실행
+```
+$ python manage.py shell_plus
+```
