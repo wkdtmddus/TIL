@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Article
 
+
 # Create your views here.
 def index(request):
     articles = Article.objects.all()
@@ -17,6 +18,7 @@ def detail(request, pk):
     }
     return render(request, 'articles/detail.html', context)
 
+
 def new(request):
     return render(request, 'articles/new.html')
 
@@ -25,7 +27,7 @@ def create(request):
     # print(request.GET)  # <QueryDict: {'title': ['제목'], 'content': ['내용']}>
     title = request.POST.get('title')
     content = request.POST.get('content')
-    
+
     # 1
     # article = Article()
     # article.title = title
@@ -43,7 +45,7 @@ def create(request):
 
 
 def delete(request, pk):
-    # 몇번 글 삭제할건데? -> 조회
+    # 몇번 글 삭제? -> 조회 먼저
     article = Article.objects.get(pk=pk)
     article.delete()
     return redirect('articles:index')
@@ -58,7 +60,7 @@ def edit(request, pk):
 
 
 def update(request, pk):
-    # 몇번 게시글 수정? -> 조회
+    # 몇번 글 수정? -> 조회 먼저
     article = Article.objects.get(pk=pk)
 
     title = request.POST.get('title')
