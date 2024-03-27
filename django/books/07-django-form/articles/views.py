@@ -21,11 +21,11 @@ def detail(request, pk):
 
 
 # def new(request):
-    # form = ArticleForm()
-    # context = {
-    #     'form': form,
-    # }
-    # return render(request, 'articles/new.html', context)
+# form = ArticleForm()
+# context = {
+#     'form': form,
+# }
+# return render(request, 'articles/new.html', context)
 
 
 # def create(request):
@@ -43,19 +43,19 @@ def detail(request, pk):
 #     return render(request, 'articles/new.html', context)
 #     # return redirect('articles:new')
 
+
 def create(request):
-    form = ArticleForm(request.POST)
     if request.method == 'POST':
+        form = ArticleForm(request.POST)
         if form.is_valid():
             article = form.save()
             return redirect('articles:detail', article.pk)
-    else: # POST가 아닌 다른 모든 경우
+    else:  # POST가 아닌 다른 모든 경우
         form = ArticleForm()
     context = {
         'form': form,
     }
     return render(request, 'articles/create.html', context)
-    
 
 
 def delete(request, pk):
