@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+  <h1>나만의 SNS 서비스</h1>
+  <div>
+    <a href="{% url "articles:create" %}">[CREATE]</a>
+  </div>
+  <div>
+    <img src="{% static "Article.png" %}" alt="#">
+  </div>
+  {% for article in articles %}
+    <a href="{% url "articles:detail" article.pk %}">{{ article.title }}</a>
+    <hr>
+  {% empty %}
+    <p>게시글을 작성해 주세요.</p>
+  {% endfor %}
+{% endblock content %}
