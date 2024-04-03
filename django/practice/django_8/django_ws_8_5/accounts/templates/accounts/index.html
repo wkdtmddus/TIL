@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% if request.user.is_authenticated %}
+    <form action="{% url 'accounts:logout' %}" method="POST">
+      {% csrf_token %}
+      <input type="submit" value="LOGOUT">
+    </form>
+    <form action="{% url "accounts:increase_score" request.user.pk %}" method="post">
+      {% csrf_token %}
+      <input type="submit" value="Increase My Score">
+    </form>
+  {% else %}
+    <a href="{% url 'accounts:login' %}">[LOGIN]</a>
+  {% endif %}
+  <h1>전체 유저 목록</h1>
+  <ul>
+    {% for person in persons %}
+      <li>{{ person.username }}</li>
+      <ul>
+        <li>{{person.score}}</li>
+      </ul>
+      {% if request.user.pk == person.pk %}
+        <form action="{% url 'accounts:increase_score' person.pk %}" method="POST">
+          {% csrf_token %}
+          <input type="submit" value="Increase Score">
+        </form>
+      {% endif %}
+      <hr>
+    {% endfor %}
+  </ul>
+{% endblock content %}
