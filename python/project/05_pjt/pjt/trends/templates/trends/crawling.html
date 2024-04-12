@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h3>크롤링 기초 - 전체 기간 검색 결과</h3>
+  {% for crawling in crawlings %}
+    <p>검색결과 : {{ crawling.name }} - {{ crawling.result }} / 검색일자 : {{ crawling.search_period }}</p>
+    <hr>
+  {% endfor %}
+{% endblock content %}
