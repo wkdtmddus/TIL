@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+  <section>
+    <article class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </article>
+    <!-- 아래에 새로운 card 생성 및 추가 -->
+  </section>
+  <script>
+    const sectionTag = document.querySelector('section')
+    const oldArticle = document.querySelector('article')
+    const newArticle = document.createElement('article')
+    const newDiv = document.createElement('div')
+    const newH5 = document.createElement('h5')
+    const newP = document.createElement('p')
+    newArticle.classList.add('card')
+    newArticle.style.width = '18rem'
+    newDiv.classList.add('card-body')
+    newH5.classList.add('card-title')
+    newP.classList.add('card-text')
+    newDiv.appendChild(newH5)
+    newDiv.appendChild(newP)
+    newArticle.appendChild(newDiv)
+    sectionTag.appendChild(newArticle)
+    sectionTag.removeChild(oldArticle)
+    newH5.textContent = '카드 제목'
+    newP.textContent = '카드 내용'
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
