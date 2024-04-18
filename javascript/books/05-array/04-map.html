@@ -23,6 +23,10 @@
     console.log(result1)
 
     // 1.2 map
+    const result2 = persons.map(function (person) {
+      return person.name
+    })
+    console.log(result2)
     
 
     // 2. 화살표 함수 표기
@@ -41,7 +45,13 @@
 
 
     // 3. 커스텀 콜백 함수
-    
+    const numbers = [1, 2, 3]
+
+    const doubleNumber = numbers.map((number) => {
+      return number * 2
+    })
+
+    console.log(doubleNumber) // [2, 4, 6]
   </script>
 </body>
 
