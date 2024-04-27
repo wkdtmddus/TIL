@@ -52,7 +52,7 @@ $ python manage.py loaddata movies/actors.json movies/movies.json movies/reviews
   * 리뷰 제목, 내용을 입력할 필드 2개 지정
 
 ### 필수 요구사항 - 모델 관계
-<img src="./image/model_relationships.PNG">
+<img src="./pjt/image/model_relationships.PNG">
 
 * **movie - actor => N:M relationship**
 
