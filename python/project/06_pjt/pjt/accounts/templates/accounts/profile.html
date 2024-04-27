@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ nickname }}님의 프로필 페이지</h1>
+{% if request.user.pk != person_pk %}
+  <form action="{% url "accounts:follow" person_pk %}" method="POST">
+    {% csrf_token %}
+    {% if person in request.user.followings.all %}
+      <input type="submit" value="언팔로우">
+    {% else %}
+      <input type="submit" value="팔로우">
+    {% endif %}
+  </form>
+{% endif %}
+
+<p>팔로잉: {{ person.followings.all|length }}  팔로워: {{ person.followers.all|length }} </p>
+<br>
+  <div>
+    <p>회원번호: {{ person_pk }} </p>
+    <p>유저이름: {{ username }} </p>
+    <p>가입날짜: {{ date_joined }}</p>
+  </div>
+<hr>
+<div>
+  <h3>유저가 쓴 글</h3>
+  <br>
+  {% if boards|length == 0 %}아직 게시글이 없습니다
+  {% else %}
+  {% for board in boards %}
+    <p>글번호 : {{ board.id }}</p>  
+    <p>글제목 : <a href="{% url 'boards:detail' board.id %}" style="text-decoration: none;">{{ board.title }}</a></p>
+    <hr>
+  {% endfor %}
+  {% endif %}
+</div>
+<div>
+  <h3>유저가 쓴 댓글</h3>
+  {% if comments|length == 0 %} 댓글이 없습니다.
+  {% else %}
+    {% for comment in comments %}
+    <div class="my-3 d-flex justify-content-between">
+      <div>
+        <span> <a href="{% url "boards:detail" comment.board.id %}">{{ comment.board.title }} 글</a>에 작성한 댓글 : {{ comment.content }}</span>
+        <span class="mx-5">({{ comment.created_at }})</span>
+      </div>
+    </div>
+    {% endfor %}
+  {% endif %}
+</div>
+<hr>
+<div>
+  <h3>팔로워</h3>
+  <ul>
+    {% for follower in person.followers.all %}
+    <li>{{ follower.nickname }}</li>
+    {% empty %}
+      <p>팔로워가 없습니다.</p>
+    {% endfor %}
+  </ul>
+</div>
+
+{% endblock content %}
