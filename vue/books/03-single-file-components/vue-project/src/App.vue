@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>App.vue</h1>
+    <h1 class="heading">App.vue</h1>
     <MyComponent />
   </div>
 </template>
@@ -11,11 +11,6 @@ import MyComponent from '@/components/MyComponent.vue'
 </script>
 
 <style scoped>
-.heading {
-  color: crimson;
-}
-
-
 header {
   line-height: 1.5;
 }
