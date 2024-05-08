@@ -1,0 +1,23 @@
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+import MainPage from '@/components/MainPage.vue'
+</script>
+
+<template>
+  <header>
+    <div class="wrapper">
+      <MainPage />
+      <nav>
+        <RouterLink :to="{ name: 'some' }">Some</RouterLink> |
+        <RouterLink :to="{ name: 'other' }">Other</RouterLink> |
+        <RouterLink :to="{ name: 'students' }">Students</RouterLink>
+      </nav>
+    </div>
+  </header>
+
+  <RouterView />
+</template>
+
+<style scoped>
+
+</style>
