@@ -41,4 +41,4 @@ Vue3의 동적 데이터 바인딩과 이벤트 핸들링을 활용해 사용자
 ---
 `@submit.prevent`를 사용하여 form에서 submit이 발생했을 때, 해당 이벤트를 중지할 수 있습니다.  
 `v-model`을 이용하여 양방향으로 바인딩합니다.
-<div style="text-align: right">20240502</div>
+<div style="text-align: right">20240429</div>

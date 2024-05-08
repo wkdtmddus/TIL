@@ -43,4 +43,4 @@ Vue의 동적 데이터 바인딩과 이벤트 핸들링을 활용해 카드 생
 ---
 form에서 sumbit이 발생했을 때, `createCard` 함수를 실행합니다.  
 조건에 맞게 코드를 작성합니다.
-<div style="text-align: right">20240502</div>
+<div style="text-align: right">20240429</div>

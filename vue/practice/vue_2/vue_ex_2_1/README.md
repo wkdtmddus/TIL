@@ -55,4 +55,4 @@ Vue의 동적 데이터 바인딩과 이벤트 핸들링을 활용해 간단한 
 ---
 `:class=""`를 사용하여 클래스를 적용할 수 있습니다.  
 클래스는 `{ 클래스이름, 값 }`으로도 적용할 수 있습니다.
-<div style="text-align: right">20240502</div>
+<div style="text-align: right">20240429</div>
