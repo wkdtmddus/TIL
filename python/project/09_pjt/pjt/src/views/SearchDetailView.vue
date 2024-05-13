@@ -24,7 +24,7 @@ const movieUrl = ref('')
 const datetime = ref('')
 axios({
       method: 'get',
-      url: `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${route.params.videoId}&key=AIzaSyD8zT4zscEYXo0ndCnJ_E0HitP-eM3J9lc`
+      url: `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${route.params.videoId}&key=`
     }).then((response) => {
       // console.log(response.data.items)
       console.log(response)

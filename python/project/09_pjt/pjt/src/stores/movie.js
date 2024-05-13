@@ -7,7 +7,7 @@ export const useMovieStore = defineStore('movie', () => {
   const findMovieStore = function (inputText) {
     axios({
       method: 'get',
-      url: `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${inputText}&type=video&key=AIzaSyD8zT4zscEYXo0ndCnJ_E0HitP-eM3J9lc`
+      url: `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${inputText}&type=video&key=`
     }).then((response) => {
       // console.log(response.data.items)
       movies.value = response.data.items
