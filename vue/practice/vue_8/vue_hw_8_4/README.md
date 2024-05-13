@@ -1,4 +1,4 @@
-### Vue3와 DRF 연동하기 - CORS Lv4
+### Vue3와 DRF 연동하기 - CR Lv4
 목표  
 - ArticleList 컴포넌트에서 게시글 정보를 렌더링하는 방법을 익힌다.
 - ArticleCreateView 컴포넌트를 생성하고 Vue Router를 통해 라우팅하는 방법을 습득한다.
