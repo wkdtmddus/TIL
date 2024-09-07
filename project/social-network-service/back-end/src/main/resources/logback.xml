@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds">
+
+    <!--파일 경로, 이름-->
+    <property name="LOG_PATH" value="/var/logs"/>
+    <property name="LOG_FILE_NAME" value="log"/>
+    <property name="ERR_LOG_FILE_NAME" value="error_log"/>
+    <!--파일 저장시 로그 형태-->
+    <property name="FILE_LOG_PATTERN" value="%-5level %d{yyyy-MM-dd HH:mm:ss.SSS} ${PID:- } --- [%t] - %msg%n"/>
+
+    <springProperty name="AWS_ACCESS_KEY" source="cloud.aws.credentials.accessKey"/>
+    <springProperty name="AWS_SECRET_KEY" source="cloud.aws.credentials.secretKey"/>
+
+    <!--모든 로그에 대한 파일 저장 설정-->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/${LOG_FILE_NAME}.log</file>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${FILE_LOG_PATTERN}</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/${LOG_FILE_NAME}.%d{yyyy-MM-dd}_%i.log</fileNamePattern>
+            <maxFileSize>10MB</maxFileSize>
+            <maxHistory>7</maxHistory>
+            <totalSizeCap>1GB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+
+    <!--에러 로그에 대한 파일 저장 설정-->
+    <appender name="ERROR_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!--에러 레벨의 로그만 처리하도록 filter 설정-->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>error</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <file>${LOG_PATH}/${ERR_LOG_FILE_NAME}.log</file>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${FILE_LOG_PATTERN}</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/${ERR_LOG_FILE_NAME}.%d{yyyy-MM-dd}_%i.log</fileNamePattern>
+            <maxFileSize>10MB</maxFileSize>
+            <maxHistory>7</maxHistory>
+            <totalSizeCap>1GB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+
+    <!-- AWS CloudWatch Logs 앱렌더 설정 -->
+    <appender name="AWS_CLOUDWATCH_LOGS" class="ca.pjer.logback.AwsLogsAppender">
+        <layout>
+            <pattern>${FILE_LOG_PATTERN}</pattern>
+        </layout>
+        <logGroupName>oe</logGroupName>
+        <logStreamUuidPrefix>oe-</logStreamUuidPrefix>
+        <logRegion>ap-northeast-2</logRegion>
+        <maxBatchLogEvents>50</maxBatchLogEvents>
+        <maxFlushTimeMillis>30000</maxFlushTimeMillis>
+        <maxBlockTimeMillis>5000</maxBlockTimeMillis>
+        <retentionTimeDays>0</retentionTimeDays>
+        <accessKeyId>${AWS_ACCESS_KEY}</accessKeyId>
+        <secretAccessKey>${AWS_SECRET_KEY}</secretAccessKey>
+    </appender>
+
+    <!--인포 레벨-->
+    <root level="INFO">
+        <appender-ref ref="FILE"/>
+    </root>
+
+    <!--에러 레벨-->
+    <root level="ERROR">
+        <appender-ref ref="ERROR_FILE"/>
+        <appender-ref ref="AWS_CLOUDWATCH_LOGS"/>
+    </root>
+</configuration>
