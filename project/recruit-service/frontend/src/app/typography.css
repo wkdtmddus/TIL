@@ -1,0 +1,94 @@
+/* typography.css */
+
+/* 기본 스타일 (모바일 기준) */
+:root {
+  --font-small: 12px;
+  --font-medium: 14px;
+  --font-large: 16px;
+  --font-xlarge: 20px;
+  --font-xxlarge: 24px;
+
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
+
+  --color-primary: #ffffff;
+  --color-secondary: #AFAFAF;
+  --color-accent: #0070f3;
+}
+
+.text-small {
+  font-size: var(--font-small);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-secondary);
+}
+
+.text-medium {
+  font-size: var(--font-medium);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-primary);
+}
+
+.text-large {
+  font-size: var(--font-large);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+}
+
+.text-xlarge {
+  font-size: var(--font-xlarge);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+}
+
+.text-xxlarge {
+  font-size: var(--font-xxlarge);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+}
+
+/* 태블릿 (화면 너비가 768px 이상일 때 적용) */
+@media (min-width: 768px) {
+  .text-small {
+    font-size: 18px;
+  }
+
+  .text-medium {
+    font-size: 20px;
+  }
+
+  .text-large {
+    font-size: 22px;
+  }
+
+  .text-xlarge {
+    font-size: 26px;
+  }
+
+  .text-xxlarge {
+    font-size: 30px;
+  }
+}
+
+/* 데스크탑 (화면 너비가 1024px 이상일 때 적용) */
+@media (min-width: 1024px) {
+  .text-small {
+    font-size: 22px;
+  }
+
+  .text-medium {
+    font-size: 24px;
+  }
+
+  .text-large {
+    font-size: 26px;
+  }
+
+  .text-xlarge {
+    font-size: 30px;
+  }
+
+  .text-xxlarge {
+    font-size: 34px;
+  }
+}

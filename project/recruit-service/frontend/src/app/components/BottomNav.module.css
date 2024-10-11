@@ -1,0 +1,45 @@
+/* components/BottomNav.module.css */
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /* 부모 넓이에 맞춰 가운데 정렬 */
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #212732;
+  /* border-top: 1px solid #eaeaea; */
+  padding: 15px 0;
+  box-shadow: 0 -1px 30px -10px rgb(0, 255, 128);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.navItem {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #979797;
+  font-size: 14px;
+}
+
+.navItem span:first-child {
+  font-size: 10px;
+  margin-bottom: 3px;
+  /* 아이콘과 텍스트 간격 */
+}
+
+
+.icon {
+  height: 24px;
+  width: 100%;
+}
+
+.active span {
+  color: #ffffff; /* 활성화된 상태에서 라벨을 흰색으로 변경 */
+}
+

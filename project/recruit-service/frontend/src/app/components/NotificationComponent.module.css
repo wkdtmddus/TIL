@@ -1,0 +1,80 @@
+.notificationPopup {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white; /* 보라색 계열 배경 */
+    color: black;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 15px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    animation: slideDown 0.5s ease-out, slideUp 0.5s ease-in 4.5s forwards;
+    z-index: 9999;
+    width: 80%;
+}
+
+/* 슬라이드다운 애니메이션 */
+@keyframes slideDown {
+    0% {
+        transform: translateX(-50%) translateY(-100%);
+    }
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* 슬라이드업 애니메이션 */
+@keyframes slideUp {
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+    100% {
+        transform: translateX(-50%) translateY(-100%);
+    }
+}
+
+.notificationHeader {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-bottom: 25px;
+    flex-direction: column;
+
+}
+
+.senderInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.notificationTime {
+    font-size: 0.8rem;
+    color: rgb(154, 154, 154);
+}
+
+.notificationContent {
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+.notificationTitle {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.header {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.testbutton {
+    position: fixed;
+    z-index: 100;
+    top: 2%;
+    left: 2%;
+}

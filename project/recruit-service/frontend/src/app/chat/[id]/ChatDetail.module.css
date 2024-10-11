@@ -1,0 +1,13 @@
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  height: 100vh;
+}
+
+.topnav {
+  top: 0;
+  position: sticky;
+  background-color: #1E1E1E;
+}

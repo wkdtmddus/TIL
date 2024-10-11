@@ -1,0 +1,10 @@
+.icon-box {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.icon-box img {
+  width: 60px;
+  height: 60px;
+}

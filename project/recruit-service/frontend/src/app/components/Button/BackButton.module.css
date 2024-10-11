@@ -1,0 +1,15 @@
+/* components/BackButton.module.css */
+.closeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333; /* 버튼 색상 */
+  transition: color 0.3s ease;
+}
+
+
+
+.icon {
+  width: 1rem; /* 아이콘 너비 */
+  height: 1rem; /* 아이콘 높이 */
+}

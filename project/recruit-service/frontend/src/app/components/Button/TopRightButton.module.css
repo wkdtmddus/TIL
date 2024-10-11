@@ -1,0 +1,47 @@
+/* components/TopRightButton.module.css */
+.topRightButtonWrapper {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333; /* 버튼 색상 */
+  transition: color 0.3s ease;
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.icon {
+  width: 1rem; /* 아이콘 너비 */
+  height: auto; /* 아이콘 높이 */
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 121px;
+  height: 88px;
+  background: #ccc;
+  
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 8px #ccc(0, 0, 0, 0.15);
+  color: white;
+  z-index: 1000;
+}
+
+.dropdownItem {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdownItem:hover {
+  background-color: #f0f0f0;
+}

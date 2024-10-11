@@ -1,0 +1,59 @@
+.chatInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #333;
+  }
+  
+  .info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .recruitImage {
+    width: 50px;
+    height: 50px;
+    margin: 0 4% 0 0;
+  }
+  
+  .buttons {
+    display: flex;
+    margin: 10px 0 0 0;
+    gap: 10px;
+  }
+  
+  .button {
+    display: inline-block;
+    color: white;
+    padding: 6px;
+    font-weight: bold;
+    background-color: #2C2C2C;
+    border: 1px solid #999;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #3C3C3C;
+  }
+  
+  .chatDetails {
+    width: 100%;
+  }
+  
+  .chatDetails h2 {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .chatDetails p {
+    margin: 5px 0;
+    font-size: 0.8rem;
+  }
+  
+  .pricedate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }

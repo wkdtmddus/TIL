@@ -1,0 +1,464 @@
+.container {
+    width: auto; /* 너비를 80%로 설정 */
+    height: auto; /* 높이는 자동으로 설정 */
+    margin-bottom: 20px; /* 아래에 여백 추가 */
+    margin: 0;
+    border-radius: 8px; /* 모서리 둥글게 */
+  }
+
+  .smallContainer{
+    flex-grow: 1; 
+    width: auto; /* 너비를 80%로 설정 */
+    height: auto; /* 높이는 자동으로 설정 */
+    margin-bottom: 20px; /* 아래에 여백 추가 */
+    background-color: #2c2c2c; /* 백그라운드 색상 유지 */
+    padding: 15px; /* 내부 여백 */
+    border-radius: 8px; /* 모서리 둥글게 */
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .section {
+    width: auto; /* 너비를 80%로 설정 */
+    height: auto; /* 높이는 자동으로 설정 */
+    margin-bottom: 20px; /* 아래에 여백 추가 */
+    background-color: #2c2c2c; /* 백그라운드 색상 유지 */
+    padding: 15px; /* 내부 여백 */
+    border-radius: 8px; /* 모서리 둥글게 */
+  }
+  
+  .section h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #ffffff;
+  }
+
+  .section p{
+    white-space: wrap;    /* 줄 바꿈 없이 텍스트가 한 줄에 표시되도록 설정 */   /* 텍스트가 넘칠 경우 숨김 */
+    
+  }
+  
+  .status {
+    color: #2CE3A7;
+    font-size: 14px;
+    margin: 0;
+    margin-left: auto;
+  }
+  
+  
+  .buttonContainer {
+    display: flex;             /* Flexbox로 수평 정렬 */
+    justify-content: space-between;  /* 버튼 사이에 여유 공간을 추가 */
+    gap: 10px;                 /* 버튼 사이 간격 설정 (원하는 값으로 조정) */
+    margin-top: 10px;
+    flex-wrap: nowrap;
+}
+
+.button {
+    display: block;
+    width: 40%;   
+    background-color: #2CE3A7;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    flex-grow: 1;
+    cursor: pointer;               /* 버튼에 커서 포인터 */
+    margin: 0;                /* 버튼들이 동일한 너비를 차지하도록 설정 */
+}
+
+.buttonContract {
+  display: block;
+  color: #2CE3A7;
+  background-color: #212732;
+  width: 80%;
+  margin: 10px auto;
+  display: block;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    flex-grow: 1; 
+}
+
+  
+  .button.disabled {
+    background-color: #555;
+    cursor: not-allowed;
+  }
+  
+  .warning {
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .chatInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  
+
+.chatDetails {
+    margin: 2% auto 2% 2%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatDetailsTitle {
+    margin: 0;
+    font-size: 1rem; /* as needed */
+    font-weight: bold; /* as needed */
+    color: #fff; /* ensure color is set if needed */
+}
+
+.arrowButton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.priceInfo {
+    margin-top: 8px;
+    font-size: 0.8rem;
+    color: #ffffff;
+}
+
+.priceDetailSpan {
+    font-size: 0.6rem;
+    margin-left: 8px;
+}
+.imageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the image horizontally */
+    margin-top: auto; /* Vertically center relative to its container */
+    margin-bottom: auto; /* Vertically center relative to its container */
+  }
+  
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Aligns h2 and p */
+  }
+  
+  .textGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .horizontalAlign {
+    display: flex;         /* 플렉스 박스를 사용해 수평 정렬 */
+    align-items: center;   /* 아이콘과 텍스트를 수직 가운데 정렬 */
+    justify-content: space-between;
+    margin-bottom: 10px; 
+    margin-top: 0;
+    width: 100%;
+  }
+  
+  .mainCardImage {
+    width: auto;
+    max-height: 100%; 
+    height: 100px; /* Example height; adjust as needed */
+    margin-left: 20px; /* Space between text and image */
+  }
+  
+  .titleWithButton {
+    display: flex;
+    align-items: center;
+  }
+  
+  .arrowButton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  .status {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #333;
+  }
+  
+  .completed {
+    background-color: #191D25;
+  }
+  
+  .incomplete {
+    background-color: #992222;
+  }
+  
+  .statusTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px; /* Adjust as necessary */
+}
+
+  
+  .buttonStyle {
+    background-color: #2CE3A7;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .incompleteButton {
+    background-color: #FF4444;
+  }
+  
+
+  .noticeBox {
+    background-color: rgba(255, 73, 73, 0.2); /* 배경색 #FF4949에 투명도 20% */
+    padding: 10px;  /* 내부 여백 */
+    color: #000;    /* 텍스트 색상을 검정으로 설정 */
+    border-radius: 5px;  /* 모서리 둥글게 설정 */
+    margin-bottom: 10px; /* 아래쪽 여백 */
+}
+
+.warning {
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+  
+  .salary {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .heading {
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    justify-content: flex-start; /* Align children to the start */
+    align-items: flex-start; /* Align items to the start horizontally */
+    margin-top: 20px; /* Adjust spacing as needed */
+    margin-bottom: 5px;
+    color: #fff;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  
+  
+  .container {
+    max-width: 400px;
+    margin: 20px auto; 
+    padding: 20px;
+    padding-left: 20px; /* Match padding to ensure alignment */
+    border-radius: 10px;
+    color: #FFFFFF;
+  }
+  
+
+
+.applyButton {
+    background-color: #2ce3a7;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+
+.progressContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.progressIndicator {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.characterIcon {
+    width: 50px;
+    height: 50px;
+}
+
+.progressBarContainer {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.progressBar {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background-color: #444;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.progressFill {
+    width: 50%; /* 현재 진행도를 조절할 수 있음 */
+    height: 100%;
+    background-color: #2CE3A7;
+    border-radius: 2px;
+}
+
+.progressLabels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.progressLabel {
+    font-size: 14px;
+    color: #999;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.timelineItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.timelineItem::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: calc(100% - 40px); /* 두 아이템 사이를 연결하는 선 */
+    background-color: #444;
+    left: 50%;
+    top: 40px;
+}
+
+.timelineItem:last-child::after {
+    content: none;
+}
+
+.timelineIcon {
+    width: 30px;
+    height: 30px;
+    background-color: #2CE3A7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    margin-right: 10px;
+}
+
+.timelineContent h2 {
+    font-size: 16px;
+    color: white;
+    margin: 0;
+}
+
+.horizontalAlign {
+  display: flex;
+  align-items: stretch;  /* 자식 요소의 높이를 동일하게 설정 */
+  justify-content: flex-start;
+}
+
+.verticalLine {
+  width: 2px;            /* 막대선의 너비 */
+  height: 100%;          /* 부모 요소의 높이에 맞춰서 늘어나도록 설정 */
+  margin-right: 10px;    /* 이미지와 텍스트 사이의 간격 */
+}
+
+
+.infoBox {
+  display: flex;
+  flex-direction: column; /* 수직 정렬 */
+  align-items: flex-start; /* 수평 방향으로 왼쪽 정렬 */
+  margin: 10px 0; /* 위아래 마진 */
+  color: #fff;
+  padding-left: 20px; /* 왼쪽 여백 추가 */
+  position: relative;
+
+}
+
+.timeBoxContainer {
+  display: inline-flex; /* 인라인 요소처럼 동작하게 하여 수평 중앙에 위치 지정 */
+
+  gap: 5%; /* 두 timeBox 사이의 간격 */
+  width: 100%; /* 컨테이너가 차지하는 전체 너비 설정 */
+}
+
+.timeBox {
+  padding: 10px;
+  border: 1px solid rgba(44, 227, 167, 0.2); /* 시각적인 구분선 */
+  border-radius: 5px;
+  background-color: rgba(44, 227, 167, 0.2); /* 약간의 배경색 설정 */
+  margin-left: auto; /* 왼쪽 정렬 시 오른쪽으로 이동 */
+  margin-right: auto; /* 왼쪽으로 이동 시 가운데 정렬 */
+  width: 30%;
+  text-align: center; /* 텍스트를 가운데 정렬 */
+
+  padding: 5px 10px; /* 패딩 추가 */
+  margin-top: 5px; /* 위쪽에 여백 추가 */
+}
+
+.timelineHeadingContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* 요소들이 수직으로 중앙에 위치하게 합니다 */
+  width: 100%; /* 부모 요소의 가로폭을 가득 채우도록 설정 */
+}
+
+.timelineHeading {
+  margin: 0; /* h2의 기본 마진 제거 */
+  font-size: 16px; /* 필요에 따라 글자 크기 설정 */
+  color: white;
+}
+
+.leftContainer {
+  display: flex;
+  align-items: center;
+}

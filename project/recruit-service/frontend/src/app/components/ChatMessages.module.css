@@ -1,0 +1,129 @@
+.chatContent {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+  }
+
+.chatBox {
+    display: flex;
+    padding: 12px;
+    overflow-y: scroll;
+    flex-grow: 1;
+    gap: 10px;
+    box-sizing: border-box;
+  }
+  
+  .chatMessages {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+  
+  .messageBubble {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .myMessage {
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+  }
+  
+  .otherMessage {}
+  
+  .chatMsg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    background-color: #2C2C2C;
+    border: 1px;
+    border-radius: 10px;
+    padding: 8px;
+    max-width: 49%;
+    white-space: pre-wrap;
+  }
+  
+  .myChatMsg {
+    background-color: #2CE3A7;
+    color: black;
+  }
+  
+  .otherChatMsg {}
+  
+  .msgInfo {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    bottom: 0;
+  }
+  
+  .myMsgInfo {
+    align-items: end;
+  }
+  
+  .otherMsgInfo {}
+  
+  .chatTime {
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    font-size: small;
+  }
+  
+  .chatCheck {
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+  
+  .msgInputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 640px;
+    background-color: #1E1E1E;
+  }
+  
+  .inputPlus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 12px;
+  }
+  
+  .inputBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 8;
+    padding: 8px;
+  }
+  
+  .msgInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #313235;
+    color: white;
+    outline-color: #2CE3A7;
+    font-size: 1rem;
+    height: 16px;
+  }
+  
+  .inputSend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin-right: 12px;
+  }

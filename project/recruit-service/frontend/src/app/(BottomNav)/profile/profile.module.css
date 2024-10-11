@@ -1,0 +1,93 @@
+.mypageContainer {
+    padding: 16px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .profileSection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .profileImage {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .defaultProfile {
+    width: 48px;
+    height: 48px;
+    background-color: #ccc;
+    border-radius: 50%;
+  }
+  
+  .profileLink {
+    margin-left: 8px;
+    color: #0070f3;
+    text-decoration: none;
+  }
+  
+  .historyCards {
+    display: flex;
+    gap: 16px;
+    margin: 16px 0;
+  }
+  
+  .card {
+    padding: 16px;
+    background-color: #222;
+    color: #fff;
+    border-radius: 8px;
+    flex: 1;
+  }
+  
+  .tabNavigation {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  
+  .tabButton {
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #1E1E1E;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  .activeTab {
+    background-color: #2CE3A7;
+    color: #ffffff;
+  }
+  
+  .tabContent {
+    margin-top: 16px;
+  }
+  
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .emptyMessage {
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .nickname {
+    color: #2CE3A7;
+    font-size: 16px; /* Optional: adjust font size if needed */
+  }
+  
+  

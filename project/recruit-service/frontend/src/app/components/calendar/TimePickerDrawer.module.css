@@ -1,0 +1,46 @@
+.drawerBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.drawerContainer {
+  background-color: #1c1c1e;
+  width: 100%;
+  max-height: 40%;
+  border-radius: 20px 20px 0 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeList {
+  margin-top: 20px;
+  overflow-y: auto;
+}
+
+.timeItem {
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+}
+
+.timeItem:hover {
+  background-color: #2ce3a7;
+  color: white;
+}

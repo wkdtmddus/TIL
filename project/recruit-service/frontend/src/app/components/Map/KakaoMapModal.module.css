@@ -1,0 +1,76 @@
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1E1E1E;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.keywordContainer {
+  padding: 20px;
+  background-color: #212732;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyButton {
+
+  background: none;
+  border: none;
+  padding: 0;
+  color: #2CE3A7;
+  font: inherit;
+  cursor: pointer;
+}
+
+
+.modalContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.copyNotification {
+  width: 50%;
+  position: fixed;
+  top: -50px; /* Initially hidden above */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  z-index: 1000;
+  animation: slideDown 0.5s forwards, slideUp 0.5s 1.5s forwards;
+}
+
+/* Slide down effect */
+@keyframes slideDown {
+  from {
+    top: 10px;
+    opacity: 0;
+  }
+  to {
+    top: 20px;
+    opacity: 1;
+  }
+}
+
+/* Slide up effect */
+@keyframes slideUp {
+  from {
+    top: 20px;
+    opacity: 1;
+  }
+  to {
+    top: 10px;
+    opacity: 0;
+  }
+}
+

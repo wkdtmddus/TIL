@@ -1,0 +1,212 @@
+/* h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+} */
+
+.detailPage {
+    background-color: #1c1c1e;
+    color: white;
+    /* padding: 20px; */
+    /* font-family: Arial, sans-serif; */
+}
+
+/* components/Banner.module.css */
+.banner {
+    display: flex;
+    justify-content: center;
+    /* 텍스트와 이미지 간의 공간 확보 */
+    align-items: center;
+    /* 세로 가운데 정렬 */
+    background-color: #0280F4;
+    /* 배경색 설정 */
+    padding: 30px;
+    /* 내부 여백 설정 */
+    margin-bottom: 10px;
+}
+
+.textContainer {
+    flex: 7;
+    /* 텍스트 컨테이너의 최대 너비 */
+}
+
+
+.character {
+    /* flex: 3; */
+    max-width: 50%;
+    height: auto;
+}
+
+.textWithMargin {
+    margin-bottom: 10px;
+    /* 원하는 마진 바텀 값 */
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.headerText {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.imageSection {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.characterImage {
+    width: 200px;
+    height: 200px;
+}
+
+.mainDetails {
+    padding: 20px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.detailsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.detailItem {
+
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: flex-start;
+    padding: 15px;
+    /* background-color: #2c2c2e; */
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.183);
+    gap: 15px;
+    /* margin-top: 5px; */
+    margin-bottom: 10px;
+}
+
+.detailItemText {
+    display: flex;
+    flex-direction: column;
+}
+
+.detailItemIcon {
+    width: 30px;
+}
+
+.price {
+    color: #2ce3a7;
+    font-weight: bold;
+}
+
+.conditions,
+.requirements,
+.lineupArea,
+.linerInfo {
+    margin: 40px 0;
+}
+
+
+
+.mapBox {
+    /* background-color: #2c2c2e; */
+    /* border-radius: 8px; */
+    /* padding: 10px; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+.mapButton {
+    background-color: #2ce3a7;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.linerInfo {
+    /* background-color: #2c2c2e; */
+    /* border-radius: 8px; */
+    /* padding: 10px; */
+}
+
+.linerName {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.likeButton {
+    background-color: transparent;
+    border: 2px solid #212732;
+    color: #2ce3a7;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heartIcon {
+    width: 50%;
+}
+
+.applyButton {
+    background-color: #2ce3a7;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.divideline {
+    width: 100%;
+    opacity: 20%;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+
+.dropdownMenu {
+    position: absolute;
+    background-color: #313235;
+    max-height: 160px;
+    overflow-y: auto;
+    width: 40%;
+    border: 1px solid #212732;
+    border-radius: 5%;
+    z-index: 500;
+  }
+  
+  .dropdownItem {
+    font-size: 0.9rem;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-bottom: 1px solid #212732;
+  }
+  
+  .dropdownItem:hover {
+    background-color: #2ce3a7;
+  }

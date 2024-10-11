@@ -1,0 +1,37 @@
+1. Amazon Web Services (AWS) S3
+
+서비스 역할: 파일 및 이미지 저장소로 사용.
+주요 기능: 사용자 프로필 이미지, 채팅 이미지, 문서 저장.
+연동 방법: AWS SDK를 사용하여 파일 업로드/다운로드 기능을 구현.
+사용 API: PutObject, GetObject
+인증 방식: AWS IAM 사용자 자격증명을 통해 인증 (Access Key, Secret Key 사용).
+
+
+
+2. AWS CloudFront
+
+서비스 역할: 콘텐츠 전송 네트워크(CDN)로, 사용자에게 정적 콘텐츠(이미지, CSS, JS 파일)를 빠르게 전달.
+주요 기능: S3 버킷에 저장된 파일을 전 세계 사용자에게 저지연으로 배포.
+연동 방법: CloudFront 배포를 통해 S3 버킷의 파일을 캐싱하고 제공.
+사용 API: CloudFront URL을 통해 콘텐츠 제공.
+인증 방식: IAM 자격증명 사용, S3에 대한 퍼블릭 액세스를 제어.
+
+
+
+3. Toss Payments
+
+서비스 역할: 결제 처리 서비스.
+주요 기능: 결제 요청, 결제 승인 및 확인.
+연동 방법: Toss Payments API를 사용하여 결제 처리 및 확인.
+사용 API: POST /v1/payments/confirm
+인증 방식: API 키를 사용한 인증.
+
+
+
+4. OAuth2 (Kakao, Naver, Google)
+
+서비스 역할: OAuth2 인증.
+주요 기능: 사용자의 소셜 계정을 통한 로그인 및 회원가입 처리.
+연동 방법: Spring Security OAuth2 클라이언트 설정.
+사용 API: GET /oauth2/v2/auth
+인증 방식: 클라이언트 ID, 클라이언트 시크릿을 통한 인증.

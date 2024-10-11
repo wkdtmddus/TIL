@@ -1,0 +1,102 @@
+pipeline {
+    agent any
+
+    environment {
+        PATH = "/usr/bin:$PATH"
+    }
+
+    stages {
+
+        stage('Clone Repository') {      
+            steps {
+                git branch: 'master', 
+                credentialsId: 'lineup-personal-access-token', 
+                url: 'https://lab.ssafy.com/s11-ai-image-sub1/S11P21A201.git'
+            } 
+        }
+        
+        stage('Build Backend with Gradle') {
+            steps {
+                dir('backend') {  
+                    sh 'chmod +x ./gradlew'  
+                    sh './gradlew clean build -x test'  // 테스트 건너뛰기
+                }
+            }
+        }
+        
+        stage('Build Backend Docker Image') {
+            steps {
+                dir('backend') {
+                    script {
+                        sh 'docker build -t backend-app:latest .'
+                    }
+                }
+            }
+        }
+
+        stage('Build Frontend with npm') {
+            agent {
+                docker {
+                    image 'node:18-alpine'
+                    args '-v /var/run/docker.sock:/var/run/docker.sock'
+                }
+            }
+            steps {
+                dir('frontend') {  
+                    sh 'npm install' 
+                    sh 'npm run build' 
+                }
+            }
+        }
+        
+        stage('Build Frontend Docker Image') {
+            steps {
+                dir('frontend') {
+                    script {
+                        sh 'docker build -t frontend-app:latest .' 
+                    }
+                }
+            }
+        }
+
+        stage('Deploy with Docker Compose') {
+            steps {
+                script {
+                    sh 'sudo systemctl stop nginx || true'
+                    sh 'docker stop nginx || true'
+                    sh 'docker rm nginx || true'
+
+                    sh '/usr/bin/docker-compose down'
+                    sh '/usr/bin/docker-compose up -d --build --remove-orphans'
+                }
+            }
+        }
+
+        stage('Tag and Push Docker Images') {
+            steps {
+                script {
+                        
+                    dir('backend') {
+                        sh 'docker tag backend-app:latest j02yo/backend-app:latest'
+                        sh 'docker push j02yo/backend-app:latest'
+                    }
+                    
+                    dir('frontend') {
+                        sh 'docker tag frontend-app:latest j02yo/frontend-app:latest'
+                        sh 'docker push j02yo/frontend-app:latest'
+                    }
+
+                }
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Deployment succeeded!'
+        }
+        failure {
+            echo 'Deployment failed!'
+        }
+    }
+}

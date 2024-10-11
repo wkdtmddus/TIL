@@ -1,0 +1,69 @@
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.mainTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+  animation: slideInFromRight 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+.title {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 20%;
+  padding-bottom: 20%;
+  animation: slideInFromRight 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.character {
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+  animation: slideInFromRight 1s ease forwards;
+  animation-delay: 1.5s;
+}
+
+.button {
+  display: inline-block;
+  background-color: #2CE3A7;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 100%;
+  animation: slideInFromRight 1s ease forwards;
+  animation-delay: 2s;
+}
+
+.button:hover {
+  background-color: #1cbf88;
+}
+
+.buttonText {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+}

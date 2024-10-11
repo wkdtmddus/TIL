@@ -1,0 +1,182 @@
+.modalBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modalContainer {
+    background-color: #1c1c1e;
+    width: 100%;
+    /* Take up the full width */
+    height: 100%;
+    /* Take up the full height */
+    max-width: 100%;
+    border-radius: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputContainer {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.searchContainer {
+    /* display: flex; */
+    padding: 5px 20px;
+    background-color: #1c1c1e;
+    position: sticky;
+    top: 60px;
+    z-index: 1;
+}
+
+.searchInput {
+    height: 20px;
+    /* width: 100%; */
+    padding: 12px;
+    border: 1px solid #3c3f4a;
+    /* 기본 테두리 색상 */
+    border-radius: 10px;
+    background-color: #1f1f2b;
+    /* 배경색 */
+    color: #ffffff;
+    /* 입력 텍스트 색상 */
+    font-size: 14px;
+}
+
+.searchInput::placeholder {
+    color: #6c6c6c;
+    /* 플레이스홀더 텍스트 색상 */
+}
+
+.searchInput:focus {
+    border-color: #2CE3A7;
+    /* 포커스 시 테두리 색상 */
+    outline: none;
+}
+
+.results {
+    flex-grow: 1;
+    overflow-y: auto;
+    /* Allow vertical scrolling for results */
+    padding: 0px 20px;
+    margin-top: 10px;
+}
+
+.resultItem {
+    padding: 20px 0px;
+    /* border: 1px solid #ccc; */
+    cursor: pointer;
+    background-color: #1c1c1e;
+    border-bottom: 1px solid #3c3f4a;
+}
+
+.resultItem strong {
+    display: block;
+    color: #2ce3a7;
+}
+
+.resultItem small {
+    color: #999;
+}
+
+
+.examples {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #999;
+}
+
+.exampleItem {
+    color: #2ce3a7;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.textMarginBottom {
+    font-size: 18px;
+    color: white;
+    font-weight: bolder;
+}
+
+.error {
+    margin-top: 10px;
+    text-align:
+        center;
+    color: red;
+}
+
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2c7fb8;
+    color: #fff;
+    cursor: pointer;
+}
+
+.divideline {
+    width: 100%;
+    opacity: 20%;
+    /* margin-bottom: 20px; */
+}
+
+
+.roadAddr {
+    display: flex;
+}
+
+.roadAddrBox {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B2E32;
+    color: #8F8F8F;
+    font-size: 10px;
+    padding: 5px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.roadAddrInfo {
+    flex: 8;
+    color: #AFAFAF;
+}
+
+.jibunAddr {
+    display: flex;
+}
+
+.jibunAddrBox {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2B2E32;
+    color: #8F8F8F;
+    font-size: 12px;
+    padding: 3px 5px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.jibunAddrInfo {
+    flex: 8;
+    color: #AFAFAF;
+}
+

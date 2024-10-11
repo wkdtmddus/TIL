@@ -1,0 +1,93 @@
+.TopBar {
+    display: flex;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.TopBarInput {
+    height: 15px;
+    width: 90%;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    padding-top: 12px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border: none;
+    background-color: #212732; /* 배경색 설정 */
+    color: #AFAFAF; /* 텍스트 색상 */
+    font-size: 12px;
+    outline: none; /* 포커스 시 외곽선 제거 */
+}
+
+.searchContainer {
+    flex: 7;
+    position: relative;
+}
+
+
+.searchIcon{
+    position: absolute;
+    right: 6%; /* 인풋의 오른쪽에 아이콘 배치 */
+    top: 45%;
+    transform: translateY(-50%); /* 아이콘 수직 가운데 정렬 */
+    width: 15px; /* 아이콘 크기 */
+    height: 15px; /* 아이콘 크기 */
+    cursor: pointer;
+}
+
+.logoimage {
+    flex: 2
+}
+
+
+.bellimage {
+    flex : 1
+}
+
+
+
+/* Full-width input styling */
+.fullWidthSearchContainer {
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.fullWidthInput {
+    height: 15px;
+    width: 80%;
+    border-radius: 20px;
+    padding: 12px 40px 10px 10px; /* Leave space for search icon */
+    border: none;
+    background-color: #212732;
+    color: #AFAFAF;
+    font-size: 12px;
+    outline: none;
+}
+
+.backButton {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #AFAFAF;
+    /* margin-right: 8px; */
+}
+
+/* Search icon inside the input */
+.fullWidthSearchContainer .searchIcon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}

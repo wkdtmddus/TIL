@@ -1,0 +1,45 @@
+/* components/Banner.module.css */
+.banner {
+    display: flex;
+    justify-content: space-between; /* 텍스트와 이미지 간의 공간 확보 */
+    align-items: center; /* 세로 가운데 정렬 */
+    background-color: #0280F4; /* 배경색 설정 */
+    padding: 20px; /* 내부 여백 설정 */
+  }
+  
+  .textContainer {
+    flex: 7; /* 텍스트 컨테이너의 최대 너비 */
+  }
+  
+  
+  .character {
+    flex: 3;
+    /* max-width: 30%; 이미지의 최대 너비 */
+    height: auto;
+  }
+  
+  .textWithMargin {
+    margin-bottom: 10px; /* 원하는 마진 바텀 값 */
+  }
+
+.divideline {
+  width: 100%;
+  opacity: 20%;
+  margin-bottom: 20px;
+
+}
+
+.searchButtons {
+  color: white;
+  /* padding: 20px; */
+
+}
+
+.searchContainer {
+  width: 90%;
+  margin: 0px auto;
+}
+
+.cardContainer {
+  margin-bottom: 100px;
+}

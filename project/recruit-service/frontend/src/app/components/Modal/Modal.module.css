@@ -1,0 +1,36 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8); /* 어두운 배경으로 더 두드러지게 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* 다른 요소 위에 오도록 z-index를 높임 */
+  }
+  
+  .modalContent {
+    background: #000000;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    
+    position: relative;
+    box-shadow: 0 0 10px #2CE3A7; /* Added box-shadow with the specified color */
+  }
+  
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    color: #2CE3A7; /* Set the text color of the button to the specified color */
+  }
+  
+  

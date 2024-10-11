@@ -1,0 +1,67 @@
+.topContainer {
+  position: relative;
+}
+
+.TopNav {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px groove #a1a1a1;
+}
+
+.midText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16px;
+  width: 100%;
+  padding: 0;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.mid {
+  flex: 6;
+}
+
+.start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #333;
+  border: 1px solid #999;
+  border-radius: 10px;
+  width: 150px;
+  z-index: 1000;
+}
+
+.menuItem, .menuItemExit {
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.menuItem:hover, .menuItemExit:hover {
+  background-color: #444;
+}
+
+.menuItemExit {
+  color: red;
+}

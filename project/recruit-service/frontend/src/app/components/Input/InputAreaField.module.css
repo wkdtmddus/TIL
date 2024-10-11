@@ -1,0 +1,64 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the entire component */
+  width: 100%;
+}
+
+.labelContainer {
+  width: 90%;
+  text-align: left; /* Align text to the left */
+}
+
+.label {
+  color: #ffffff; /* Label color */
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.required {
+  color: #f44336; /* Required field indicator color */
+}
+
+.input {
+  width: 85%;
+  height: 200px;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  padding: 10px;
+  border: 1px solid #3c3f4a; /* Default border color */
+  border-radius: 10px;
+  background-color: #1f1f2b; /* Background color */
+  color: #ffffff; /* Input text color */
+  font-size: 14px;
+  transition: border-color 0.3s;
+  resize: none; /* Disable resizing */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.input::placeholder {
+  color: #6c6c6c; /* Placeholder text color */
+}
+
+.input:focus {
+  border-color: #2CE3A7; /* Border color on focus */
+  outline: none;
+}
+
+.error {
+  border-color: #f44336; /* Border color on error */
+}
+
+.errorMessageContainer {
+  width: 90%;
+  text-align: left; /* Align error message to the left */
+}
+
+.errorMessage {
+  color: #f44336; /* Error message color */
+  font-size: 12px;
+}
+
+.erroricon {
+  margin-right: 3px;
+}
