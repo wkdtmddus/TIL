@@ -1,4 +1,4 @@
-# ![로고 이미지](/frontend/src/assets/logoimg.jpg) WHO ARE YOU
+# ![로고 이미지](./frontend/src/assets/logoimg.jpg) WHO ARE YOU
 <hr>
 
 ##  🎥 프로젝트 개요
@@ -54,27 +54,27 @@
 
 |회원가입|
 | :---: |
-|![회원가입](/frontend/src/assets/signup.png)|
+|![회원가입](./frontend/src/assets/signup.png)|
 |<회원가입&로그인> <br/> - 중복 이메일, 닉네임 체크 <br /> - 약관동의 |
 <hr>
 
 |가면 미리보기 페이지|
 | :---: |
-|![영화 상세 페이지](/frontend/src/assets/previewpage.png)|
+|![영화 상세 페이지](./frontend/src/assets/previewpage.png)|
 | <로그인 성공 후 페이지> <br /> - google mediaPipe를 통해 얼굴 인식 <br /> - landmark 좌표를 기반으로 3D 가면 디자인 <br />|
 <hr>
 
 |소개팅 페이지|
 | :---: |
-|![소개팅](/frontend/src/assets/mainpage.png)|
+|![소개팅](./frontend/src/assets/mainpage.png)|
 | <소개팅 메인 페이지> <br /> - openvidu 실시간 비디오 스트리밍과 화상 회의 구현 <br /> - 브라우저와 서버 간의 안정적인 실시간 통신 보장 <br /> - 비디오 내에서 얼굴을 인식하고, 인공지능 기술을 이용하여 감정 분석 <br />|
 <hr>
 
 |일반채팅 페이지|
 | :---: |
-|![일반채팅](/frontend/src/assets/chat.png)|
+|![일반채팅](./frontend/src/assets/chat.png)|
 | <일반채팅 페이지> <br /> - websocket & stomp 프로토콜 사용 <br /> - 오픈소스 비관계형 데이터베이스 관리시스템 활용 <br />|
 <hr>
 
 ## ERD
-|![ERD](/frontend/src/assets/erd.png)|
+|![ERD](./frontend/src/assets/erd.png)|
