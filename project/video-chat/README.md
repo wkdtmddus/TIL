@@ -1,4 +1,4 @@
-# ![로고 이미지](./frontend/src/assets/logoimg.jpg) WHO ARE YOU
+# WHO ARE YOU
 <hr>
 
 ##  🎥 프로젝트 개요

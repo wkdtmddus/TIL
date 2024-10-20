@@ -1,4 +1,4 @@
-# [🥒 OE 여행(오늘 이곳)](https://oetrip.site/)
+# 🥒 OE 여행(오늘 이곳)
 
 ![image](https://github.com/FIVEZO/back-end/assets/132897437/716b5a63-bfba-4bcb-8f19-ee76a0d1bcd2)
 
@@ -15,10 +15,6 @@
 ## 📅 프로젝트 기간
 
 - 2023년 7월 28일 ~ 9월 8일 (6주)
-
-<br>
-
-## [🗂️ API 명세서(Swagger)](https://oetripdb.shop/swagger-ui/index.html)
 
 <br>
 
